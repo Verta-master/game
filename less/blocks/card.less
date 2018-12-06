@@ -1,0 +1,132 @@
+.card {
+  width: 728px;
+  padding-top: 23px;
+}
+
+.card__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.card__item {
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+//  border-right: 1px solid #404857;
+}
+
+.card__block {
+  position: relative;
+  width: 168px;
+  height: 257px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: left 2px bottom 17px, center;
+  background-size: auto 224px, 168px 257px;
+  
+  &--01 {
+    background-image:
+      url(../img/card1.png),
+      url(../img/card-bg.png);
+  }
+  
+  &--02 {
+    background-image:
+      url(../img/card2.png),
+      url(../img/card-bg.png);
+  }
+  
+  &--03 {
+    background-image:
+      url(../img/card3.png),
+      url(../img/card-bg.png);
+  }
+  
+  &--04 {
+    background-image:
+      url(../img/card4.png),
+      url(../img/card-bg.png);
+  }
+}
+
+.card__scoring {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/bg-scoring.png);
+  background-repeat: no-repeat;
+  background-size: 91px 25px;
+  background-position: center;
+}
+
+.card__score {
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 0.342em;
+  text-align: center;
+  line-height: 25px;
+  padding-left: 5px;
+}
+
+.card__fan {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #798392;
+  border: 2px solid #fff;
+}
+
+.card__income {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 93px;
+  height: 25px;
+  text-align: center;
+  color: #24bd70;
+  font-weight: 700;
+  line-height: 1;
+  background-color: #1a1f2b;
+  border-radius: 7px;
+}
+
+.card__scale {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 11px;
+  height: 250px;
+  padding-bottom: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #1a1f2b;
+  border-radius: 7px;
+}
+
+.card__range {
+  display: block;
+  width: 5px;
+  height: 168px;
+  background-color: #24bd70;
+  border-radius: 7px;
+}
