@@ -91,6 +91,27 @@
   overflow: hidden;
   background-color: #798392;
   border: 2px solid #fff;
+  
+  img {
+    display: block;
+    animation-name: rotation;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .card__income {
