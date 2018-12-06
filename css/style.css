@@ -448,7 +448,6 @@ button {
   vertical-align: middle;
   font-size: 24px;
   padding: 5px 20px;
-  margin-bottom: 25px;
   background-color: #2f3a49;
   border-radius: 5px;
   -webkit-transition: ease-out 0.3s;
@@ -537,6 +536,9 @@ button {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.tabs__text {
+  padding-bottom: 25px;
+}
 .tabs__text h2 {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -548,6 +550,14 @@ button {
   margin-bottom: 25px;
   text-indent: 25px;
 }
+.tabs__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .footer {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -558,4 +568,148 @@ button {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#1d222b), to(#171b22));
   background-image: linear-gradient(to top, #1d222b, #171b22);
   border-top: 3px solid #a8b3c5;
+}
+.card {
+  width: 728px;
+  padding-top: 23px;
+}
+.card__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+.card__item {
+  padding: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__block {
+  position: relative;
+  width: 168px;
+  height: 257px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: left 2px bottom 17px, center;
+  background-size: auto 224px, 168px 257px;
+}
+.card__block--01 {
+  background-image: url(../img/card1.png), url(../img/card-bg.png);
+}
+.card__block--02 {
+  background-image: url(../img/card2.png), url(../img/card-bg.png);
+}
+.card__block--03 {
+  background-image: url(../img/card3.png), url(../img/card-bg.png);
+}
+.card__block--04 {
+  background-image: url(../img/card4.png), url(../img/card-bg.png);
+}
+.card__scoring {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/bg-scoring.png);
+  background-repeat: no-repeat;
+  background-size: 91px 25px;
+  background-position: center;
+}
+.card__score {
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 0.342em;
+  text-align: center;
+  line-height: 25px;
+  padding-left: 5px;
+}
+.card__fan {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #798392;
+  border: 2px solid #fff;
+}
+.card__income {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 93px;
+  height: 25px;
+  text-align: center;
+  color: #24bd70;
+  font-weight: 700;
+  line-height: 1;
+  background-color: #1a1f2b;
+  border-radius: 7px;
+}
+.card__scale {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 11px;
+  height: 250px;
+  padding-bottom: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #1a1f2b;
+  border-radius: 7px;
+}
+.card__range {
+  display: block;
+  width: 5px;
+  height: 168px;
+  background-color: #24bd70;
+  border-radius: 7px;
+}
+.plot {
+  width: 328px;
 }
