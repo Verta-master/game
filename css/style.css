@@ -400,8 +400,14 @@ body {
           flex-direction: column;
   min-height: 100vh;
 }
-.footer {
-  margin-top: auto;
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-image: url(../img/bg-main.png);
+  background-repeat: no-repeat;
+  background-position: top 50px center;
+  background-size: 100% calc(100% - 50px);
 }
 img {
   max-width: 100%;
@@ -559,6 +565,7 @@ button {
           justify-content: space-between;
 }
 .footer {
+  max-width: 100%;
   padding-top: 8px;
   padding-bottom: 8px;
   font-size: 24px;
@@ -568,6 +575,7 @@ button {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#1d222b), to(#171b22));
   background-image: linear-gradient(to top, #1d222b, #171b22);
   border-top: 3px solid #a8b3c5;
+  overflow-x: hidden;
 }
 .card {
   width: 728px;
@@ -666,6 +674,45 @@ button {
   overflow: hidden;
   background-color: #798392;
   border: 2px solid #fff;
+}
+.card__fan img {
+  display: block;
+  -webkit-animation-name: rotation;
+          animation-name: rotation;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 .card__income {
   position: absolute;
