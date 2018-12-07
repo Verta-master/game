@@ -793,6 +793,7 @@ button {
   border-radius: 7px;
 }
 .plot {
+  position: relative;
   width: 328px;
   padding-top: 22px;
   padding-bottom: 24px;
@@ -808,11 +809,14 @@ button {
           justify-content: space-between;
 }
 .plot__area {
+  position: relative;
   width: 307px;
-  background-image: url(../img/arrrows.png), url(../img/line.png);
+  padding-left: 3px;
+  padding-right: 27px;
+  background-image: url(../img/arrrows.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%, 253px 100%;
-  background-position: top left, top left 15px;
+  background-size: 100% 100%;
+  background-position: top left;
 }
 .plot__scale {
   width: 12px;
@@ -847,17 +851,128 @@ button {
   height: 30%;
   background-color: #ff0000;
 }
-.plot__top {
-  width: 100%;
-  height: 50%;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 55px, #2e5943 55px, #2e5943 56px);
-  background-repeat: repeat-x;
-  background-size: 56px 100%;
+.plot__bar {
+  position: absolute;
+  display: block;
+  width: 11px;
+  height: 40%;
 }
-.plot__bottom {
-  width: 100%;
-  height: 50%;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 55px, #793838 55px, #793838 56px);
-  background-repeat: repeat-x;
-  background-size: 56px 100%;
+.plot__bar--green {
+  bottom: 50.5%;
+  background-color: #2e5943;
+}
+.plot__bar--red {
+  top: 50.5%;
+  background-color: #793838;
+}
+.plot__bar--01 {
+  left: 3px;
+  height: 30%;
+}
+.plot__bar--02 {
+  left: 17px;
+  height: 40%;
+}
+.plot__bar--03 {
+  left: 31px;
+  height: 30%;
+}
+.plot__bar--04 {
+  left: 45px;
+  height: 25%;
+}
+.plot__bar--05 {
+  left: 59px;
+  height: 22%;
+}
+.plot__bar--06 {
+  left: 73px;
+  height: 20%;
+}
+.plot__bar--07 {
+  left: 87px;
+  height: 18%;
+}
+.plot__bar--08 {
+  left: 101px;
+  height: 16%;
+}
+.plot__bar--09 {
+  left: 115px;
+  height: 15%;
+}
+.plot__bar--10 {
+  left: 129px;
+  height: 13%;
+}
+.plot__bar--11 {
+  left: 143px;
+  height: 10%;
+}
+.plot__bar--12 {
+  left: 157px;
+  height: 5%;
+}
+.plot__bar--13 {
+  left: 171px;
+  height: 5%;
+}
+.plot__bar--14 {
+  left: 185px;
+  height: 10%;
+}
+.plot__bar--15 {
+  left: 199px;
+  height: 15%;
+}
+.plot__bar--16 {
+  left: 213px;
+  height: 20%;
+}
+.plot__bar--17 {
+  left: 227px;
+  height: 14%;
+}
+.plot__bar--18 {
+  left: 241px;
+  height: 12%;
+}
+.plot__bar--19 {
+  left: 255px;
+  height: 10%;
+}
+.plot__bar--20 {
+  left: 269px;
+  height: 15%;
+}
+.plot__total {
+  position: absolute;
+  top: 40px;
+  left: 95px;
+  color: #24bd70;
+  font-size: 14px;
+  letter-spacing: -0.029em;
+}
+.plot__time {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 11px;
+  letter-spacing: -0.029em;
+}
+.plot__time--green {
+  top: 5px;
+  color: #24bd70;
+}
+.plot__time--red {
+  bottom: 5px;
+  color: #994a4b;
 }
