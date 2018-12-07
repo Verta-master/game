@@ -2,6 +2,7 @@
   display: inline-block;
   vertical-align: middle;
   font-size: 24px;
+  line-height: 1;
   padding: 5px 20px;
   text-align: center;
   background-color: #2f3a49;
@@ -17,11 +18,7 @@
   &--locked {
     position: relative;
     color: #1f2631;
-    
-    &:hover,
-    &:active {
-      background-color: #2f3a49;
-    }
+    pointer-events: none;
     
     &::before {
       content: "";
