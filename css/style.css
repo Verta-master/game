@@ -419,6 +419,9 @@ main {
   background-position: top 47px center;
   background-size: 100% calc(100% - 47px);
 }
+.footer {
+  margin-top: auto;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -1100,4 +1103,110 @@ button {
 }
 .invest__info p {
   margin: 0;
+}
+@media (max-width: 1055px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 960px) {
+  .tabs__user {
+    margin-right: 30px;
+  }
+  .tabs__logo time {
+    font-size: 18px;
+  }
+  .invest__item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .tabs__columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .plot__wrap {
+    height: 582px;
+  }
+  main {
+    background-position: top 47px center;
+    background-size: cover;
+  }
+}
+@media (max-width: 766px) {
+  .tabs__logo {
+    position: static;
+    margin-bottom: 10px;
+  }
+  .card__item {
+    width: 180px;
+    border: 1px solid #404857;
+  }
+  .card__item:first-child,
+  .card__item:nth-child(2),
+  .card__item:nth-child(3),
+  .card__item:nth-child(4n) {
+    border: 1px solid #404857;
+  }
+  .card {
+    width: 100%;
+  }
+  .invest__list,
+  .card__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .invest__item {
+    width: 180px;
+    padding: 6px;
+    border: 1px solid #404857;
+  }
+  .invest__sum {
+    margin-top: 0;
+  }
+}
+@media (max-width: 480px) {
+  .tabs__logo {
+    padding-right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .tabs__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .tabs__name a {
+    text-align: center;
+  }
+  .tabs__text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .plot__area,
+  .plot {
+    max-width: 100%;
+  }
+  .tabs__user {
+    margin-right: auto;
+  }
 }
